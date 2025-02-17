@@ -1,10 +1,4 @@
-import Stellate from "public/img/conf/Sponsors/Stellate.svg"
-import Hasura from "public/img/conf/Sponsors/Hasura.svg"
-import TheGuild from "public/img/conf/Sponsors/TheGuild.svg"
-import Apollo from "public/img/conf/Sponsors/Apollo.svg"
-import Tyk from "public/img/conf/Sponsors/Tyk.svg"
-import IBM from "public/img/conf/Sponsors/IBM.svg"
-import Graphweaver from "public/img/conf/Sponsors/Graphweaver.svg"
+import Grafbase from "public/img/conf/Sponsors/Grafbase.svg"
 
 import { clsx } from "clsx"
 import NextImage from "next-image-export-optimizer"
@@ -19,34 +13,33 @@ const SPONSORS: Array<{
   title: string
   logos: Array<LogosType>
 }> = [
-  {
-    title: "Diamond",
-    logos: [
-      { icon: TheGuild, name: "The Guild", link: "https://the-guild.dev" },
-      {
-        icon: IBM,
-        name: "IBM",
-        link: "https://www.ibm.com/products/api-connect",
-      },
-    ],
-  },
-  {
-    title: "Gold",
-    logos: [
-      { icon: Apollo, name: "Apollo", link: "https://www.apollographql.com/" },
-      {
-        icon: Graphweaver,
-        name: "Graphweaver",
-        link: "https://graphweaver.com",
-      },
-      { icon: Hasura, name: "Hasura", link: "https://hasura.io" },
-    ],
-  },
+  // {
+  //   title: "Diamond",
+  //   logos: [
+  //     { icon: TheGuild, name: "The Guild", link: "https://the-guild.dev" },
+  //     {
+  //       icon: IBM,
+  //       name: "IBM",
+  //       link: "https://www.ibm.com/products/api-connect",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Gold",
+  //   logos: [
+  //     { icon: Apollo, name: "Apollo", link: "https://www.apollographql.com/" },
+  //     {
+  //       icon: Graphweaver,
+  //       name: "Graphweaver",
+  //       link: "https://graphweaver.com",
+  //     },
+  //     { icon: Hasura, name: "Hasura", link: "https://hasura.io" },
+  //   ],
+  // },
   {
     title: "Silver",
     logos: [
-      { icon: Stellate, name: "Stellate", link: "https://stellate.co" },
-      { icon: Tyk, name: "Tyk", link: "https://tyk.io/" },
+      { icon: Grafbase, name: "Grafbase", link: "https://grafbase.com/" },
     ],
   },
 ]
@@ -99,10 +92,10 @@ function List({
   )
 }
 
-export function PastSponsors() {
+export function Sponsors() {
   return (
     <section>
-      <h1 className="conf-heading mb-12">Thanks to our 2024 sponsors!</h1>
+      <h1 className="conf-heading mb-12">Sponsors</h1>
       {SPONSORS.map(({ title, logos }, i) => (
         <>
           <div className="mb-2 flex items-center gap-2 border-b-2 border-dotted border-white/40 pb-1.5">
